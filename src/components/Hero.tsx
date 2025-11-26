@@ -117,7 +117,7 @@ const Hero: React.FC = () => {
         <motion.div
           initial={{ opacity: 0, letterSpacing: "0.2em" }}
           animate={{ opacity: 1, letterSpacing: "0.5em" }}
-          transition={{ duration: 1.5, delay: 0.5 }}
+          transition={{ duration: 1, delay: 0.5 }}
         >
           <p className="font-serif uppercase text-xs md:text-lg text-wedding-gold/90 mb-2 drop-shadow-md">
             The Royal Union Of
@@ -127,27 +127,27 @@ const Hero: React.FC = () => {
         {/* Names Container */}
         <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 mb-6 z-20 w-full px-4">
           {/* Groom Name */}
-          <AnimatedText text={COUPLE.groom} delay={0.8} />
+          <AnimatedText text={COUPLE.groom} delay={0.4} />
 
           {/* Ampersand */}
           <motion.span
             initial={{ opacity: 0, scale: 0.5, filter: "blur(5px)" }}
             animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
-            transition={{ delay: 2.0, duration: 0.8, type: "spring" }}
+            transition={{ delay: 0.5, duration: 0.8, type: "spring" }}
             className="text-wedding-gold font-serif text-3xl md:text-5xl mx-2"
           >
             &
           </motion.span>
 
           {/* Bride Name */}
-          <AnimatedText text={COUPLE.bride} delay={1.2} />
+          <AnimatedText text={COUPLE.bride} delay={0.8} />
         </div>
 
         {/* Date & Location */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 1, delay: 2 }}
+          transition={{ duration: 1, delay: 1 }}
           className="flex flex-col items-center gap-4 font-serif text-lg md:text-2xl tracking-wide text-gray-100"
         >
           <div className="flex items-center gap-4">
@@ -166,10 +166,10 @@ const Hero: React.FC = () => {
         style={{ opacity }}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 4.0, duration: 1 }}
-        className="absolute bottom-10 left-0 right-0 z-20 flex flex-col items-center gap-3"
+        transition={{ delay: 0.5, duration: 0.5 }}
+        className="absolute bottom-10 left-0 right-0 z-20 flex flex-col items-center gap-3 hidden md:flex"
       >
-        <span className="text-white/70 text-[10px] uppercase tracking-[0.3em]">
+        <span className="text-white/70  text-[10px] uppercase tracking-[0.3em]">
           Scroll to Celebrate
         </span>
         <motion.div

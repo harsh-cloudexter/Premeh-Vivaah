@@ -43,12 +43,12 @@ const Story: React.FC = () => {
             initial={{ scale: 0 }}
             whileInView={{ scale: 1 }}
             viewport={{ once: true }}
-            className="w-16 h-16 mx-auto mb-2 text-wedding-gold"
+            className="w-16 h-16 mx-auto text-wedding-gold"
           >
             <Heart className="w-full h-full fill-current opacity-20" />
           </motion.div>
 
-          <h2 className="text-4xl md:text-6xl font-serif text-wedding-red mb-2">
+          <h2 className="text-4xl md:text-6xl font-serif text-wedding-red ">
             Our Story
           </h2>
           <p className="font-script text-2xl md:text-4xl text-wedding-gold">
@@ -94,7 +94,7 @@ const Story: React.FC = () => {
             viewport={{ once: true, margin: "-10%" }}
             className="relative"
           >
-            <p className="mb-2">
+            <p className="">
               "His family arranged a simple video call.
               <br />
               But what appeared on the screen was anything but simple."
@@ -108,7 +108,7 @@ const Story: React.FC = () => {
             viewport={{ once: true, margin: "-10%" }}
             className="relative py-8"
           >
-            <h3 className="text-5xl md:text-7xl font-script text-wedding-red drop-shadow-md mb-2">
+            <h3 className="text-5xl md:text-7xl font-script text-wedding-red drop-shadow-md ">
               Mehal.
             </h3>
             <p className="text-xl italic text-gray-600">
@@ -158,7 +158,7 @@ const Story: React.FC = () => {
             viewport={{ once: true, margin: "-10%" }}
             className="pt-10"
           >
-            <Sparkles className="w-8 h-8 text-wedding-gold mx-auto mb-2 animate-spin-slow" />
+            <Sparkles className="w-8 h-8 text-wedding-gold mx-auto  animate-spin-slow" />
             <p className="font-serif text-xl md:text-2xl text-wedding-red">
               "Their story began on a screen,
               <br />

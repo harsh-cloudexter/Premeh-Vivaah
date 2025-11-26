@@ -101,12 +101,12 @@ const Shlokas: React.FC = () => {
       className="py-24 md:py-32 bg-wedding-cream relative overflow-hidden flex flex-col items-center justify-center"
     >
       {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-5 bg-[url('https://www.transparenttextures.com/patterns/black-scales.png')]"></div>
+      <div className="absolute inset-0 opacity-5 bg-[url('./black-scales.png')]"></div>
 
       {/* --- Parallax Background Elements (Ambient) --- */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         {/* Mandalas */}
-        <motion.div
+        {/* <motion.div
           style={{ y: yMoveUp, rotate }}
           className="absolute -top-20 -left-20 opacity-[0.04] z-0"
         >
@@ -125,7 +125,7 @@ const Shlokas: React.FC = () => {
             className="w-[40rem] h-[40rem]"
             alt=""
           />
-        </motion.div>
+        </motion.div> */}
 
         {/* Floating Flowers/Petals */}
         <motion.div
@@ -173,7 +173,8 @@ const Shlokas: React.FC = () => {
             }}
             transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
           >
-            <DurgaSymbol />
+            <img src="./devi1.png" className="w-[22rem] h-[22rem] " alt="" />
+            {/* <DurgaSymbol /> */}
           </motion.div>
           {/* Halo Effect */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-48 h-48 bg-wedding-red/10 rounded-full blur-3xl -z-10"></div>
