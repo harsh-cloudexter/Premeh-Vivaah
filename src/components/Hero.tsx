@@ -167,7 +167,7 @@ const Hero: React.FC = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5, duration: 0.5 }}
-        className="absolute bottom-10 left-0 right-0 z-20 flex flex-col items-center gap-3 hidden md:flex"
+        className="absolute bottom-2 left-0 right-0 z-20 flex flex-col items-center gap-3 hidden md:flex"
       >
         <span className="text-white/70  text-[10px] uppercase tracking-[0.3em]">
           Scroll to Celebrate

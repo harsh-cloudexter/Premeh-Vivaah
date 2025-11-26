@@ -173,7 +173,7 @@ const Shlokas: React.FC = () => {
             }}
             transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
           >
-            <img src="./devi1.png" className="w-[22rem] h-[22rem] " alt="" />
+            <img src="./devi1.png" className=" h-[22rem] " alt="" />
             {/* <DurgaSymbol /> */}
           </motion.div>
           {/* Halo Effect */}

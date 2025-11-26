@@ -51,14 +51,14 @@ const Story: React.FC = () => {
           <h2 className="text-4xl md:text-6xl font-serif text-wedding-red ">
             Our Story
           </h2>
-          <p className="font-script text-2xl md:text-4xl text-wedding-gold">
+          <p className="font-script text-2xl md:text-4xl text-wedding-gold mt-6">
             "When Devi decides, distance disappears."
           </p>
           <div className="w-24 h-[1px] bg-wedding-red/30 mx-auto mt-8"></div>
         </motion.div>
 
         {/* Content Section */}
-        <div className="space-y-12 md:space-y-16 text-center md:text-lg leading-relaxed font-sans text-gray-700 relative">
+        <div className="space-y-12 md:space-y-16 text-center md:text-lg leading-relaxed font-sans text-gray-700 relative ">
           {/* The Vertical Line "Thread" */}
           <div className="absolute top-10 bottom-10 left-1/2 w-[1px] bg-gradient-to-b from-transparent via-wedding-gold/30 to-transparent -translate-x-1/2 hidden md:block"></div>
 
@@ -67,7 +67,7 @@ const Story: React.FC = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-10%" }}
-            className="relative bg-wedding-cream/80 backdrop-blur-sm p-4 inline-block shadow-sm rounded-lg border border-white/50"
+            className="relative bg-wedding-cream/80 backdrop-blur-sm p-4 inline-block shadow-sm rounded-lg border border-white/50 mt-6"
           >
             "For five long years,{" "}
             <span className="text-wedding-red font-semibold">Premraj</span>{" "}
@@ -81,7 +81,7 @@ const Story: React.FC = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-10%" }}
-            className="relative bg-wedding-cream/80 backdrop-blur-sm p-4 inline-block shadow-sm rounded-lg border border-white/50"
+            className="relative bg-wedding-cream/80 backdrop-blur-sm p-4 inline-block shadow-sm rounded-lg border border-white/50 mt-6"
           >
             "Then one serene day in June 2025, inside the peaceful space of the
             ashram, destiny revealed its plan."
@@ -94,7 +94,7 @@ const Story: React.FC = () => {
             viewport={{ once: true, margin: "-10%" }}
             className="relative"
           >
-            <p className="">
+            <p className=" mt-6">
               "His family arranged a simple video call.
               <br />
               But what appeared on the screen was anything but simple."
@@ -111,7 +111,7 @@ const Story: React.FC = () => {
             <h3 className="text-5xl md:text-7xl font-script text-wedding-red drop-shadow-md ">
               Mehal.
             </h3>
-            <p className="text-xl italic text-gray-600">
+            <p className="text-xl italic text-gray-600 mt-6">
               "Graceful. Grounded. Real.
               <br />A presence that felt divinely sent."
             </p>
@@ -122,7 +122,7 @@ const Story: React.FC = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-10%" }}
-            className="relative bg-wedding-cream/80 backdrop-blur-sm p-4 inline-block shadow-sm rounded-lg border border-white/50"
+            className="relative bg-wedding-cream/80 backdrop-blur-sm p-4 inline-block shadow-sm rounded-lg border border-white/50 mt-6"
           >
             "Everything he had prayed for—
             <span className="text-wedding-red font-serif mx-1">Devi</span>
@@ -134,7 +134,7 @@ const Story: React.FC = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-10%" }}
-            className="relative bg-wedding-cream/80 backdrop-blur-sm p-4 inline-block shadow-sm rounded-lg border border-white/50"
+            className="relative bg-wedding-cream/80 backdrop-blur-sm p-4 inline-block shadow-sm rounded-lg border border-white/50 mt-6"
           >
             "It felt like a dream… until Mehal literally pinched him and turned
             that dream into reality."
@@ -145,7 +145,7 @@ const Story: React.FC = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-10%" }}
-            className="relative bg-wedding-cream/80 backdrop-blur-sm p-4 inline-block shadow-sm rounded-lg border border-white/50"
+            className="relative bg-wedding-cream/80 backdrop-blur-sm p-4 inline-block shadow-sm rounded-lg border border-white/50 mt-6"
           >
             "Since then, conversations have flowed effortlessly, energies have
             aligned naturally, and two journeys have slowly woven into one."
@@ -159,7 +159,7 @@ const Story: React.FC = () => {
             className="pt-10"
           >
             <Sparkles className="w-8 h-8 text-wedding-gold mx-auto  animate-spin-slow" />
-            <p className="font-serif text-xl md:text-2xl text-wedding-red">
+            <p className="font-serif text-xl md:text-2xl text-wedding-red mt-6">
               "Their story began on a screen,
               <br />
               but now it will be written in the sacred fire."
