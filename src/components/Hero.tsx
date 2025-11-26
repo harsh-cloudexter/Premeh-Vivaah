@@ -75,7 +75,7 @@ const Hero: React.FC = () => {
           y: backgroundY,
           scale: backgroundScale, // Dynamic scale for zoom effect
           // Authentic Indian Hindu Wedding Couple in Traditional Red/Gold Attire
-          backgroundImage: " url('/src/assets/hero-bg.jpg')",
+          backgroundImage: " url('./hero-bg.jpg')",
           // backgroundcolor: "linear-gradient(rgba(250, 245, 235, 0.5), rgba(250, 245, 235, 0.85)),",
           filter: " contrast(1.1) saturate(0.9)",
         }}
@@ -107,7 +107,7 @@ const Hero: React.FC = () => {
             //   repeat: Infinity,
             //   ease: "easeInOut",
             // }}
-            src="./src/assets/ganesh.png"
+            src="./ganesh.png"
             alt="Ganesha"
             className="w-28 h-28 md:w-40 md:h-40 mx-auto mb-2 drop-shadow-[0_0_25px_rgba(212,175,55,0.6)] bg-transparent"
           />
