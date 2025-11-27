@@ -3,32 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aarav & Diya | The Royal Union</title>
+    <title>Dilraj & Mehar | The Royal Union</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;800&family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;800&family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <script>
       tailwind.config = {
         theme: {
           extend: {
             colors: {
-              'wedding-red': '#C41E3A',
-              'wedding-gold': '#D4AF37',
-              'wedding-cream': '#FFFDD0',
-              'wedding-orange': '#FF8C00',
+              "wedding-red": "#C41E3A",
+              "wedding-gold": "#D4AF37",
+              "wedding-cream": "#FFFDD0",
+              "wedding-orange": "#FF8C00",
             },
             fontFamily: {
-              'serif': ['Cinzel', 'serif'],
-              'script': ['Great Vibes', 'cursive'],
-              'sans': ['Poppins', 'sans-serif'],
+              serif: ["Cinzel", "serif"],
+              script: ["Great Vibes", "cursive"],
+              sans: ["Poppins", "sans-serif"],
             },
             backgroundImage: {
-              'mandala-pattern': "url('https://www.transparenttextures.com/patterns/black-scales.png')",
-            }
-          }
-        }
-      }
+              "mandala-pattern":
+                "url('https://www.transparenttextures.com/patterns/black-scales.png')",
+            },
+          },
+        },
+      };
     </script>
     <style>
       /* Custom scrollbar */
@@ -39,7 +43,7 @@
         background: #f1f1f1;
       }
       ::-webkit-scrollbar-thumb {
-        background: #C41E3A;
+        background: #c41e3a;
         border-radius: 5px;
       }
       ::-webkit-scrollbar-thumb:hover {
@@ -49,26 +53,30 @@
         animation: spin-slow 60s linear infinite;
       }
       @keyframes spin-slow {
-        from { transform: rotate(0deg); }
-        to { transform: rotate(360deg); }
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
       }
     </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react/": "https://aistudiocdn.com/react@^19.2.0/",
-    "react": "https://aistudiocdn.com/react@^19.2.0",
-    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
-    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0"
-  }
-}
-</script>
-<link rel="stylesheet" href="/index.css">
-</head>
+    <script type="importmap">
+      {
+        "imports": {
+          "react/": "https://aistudiocdn.com/react@^19.2.0/",
+          "react": "https://aistudiocdn.com/react@^19.2.0",
+          "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.24",
+          "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+          "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+          "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0"
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="/index.css" />
+  </head>
   <body class="bg-wedding-cream text-gray-800 overflow-x-hidden">
     <div id="root"></div>
-  <script type="module" src="/index.tsx"></script>
-</body>
+    <script type="module" src="/index.tsx"></script>
+  </body>
 </html>
