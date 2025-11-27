@@ -17,7 +17,7 @@ export const WEDDING_EVENTS: EventDetails[] = [
     location: "Aadhoi Datak",
     description:
       "A evening of turmeric, laughter, and blessings to start the festivities.",
-    image: "https://picsum.photos/800/600?random=10",
+    image: "./haldi.jpg",
   },
   {
     id: "dandiyaras",
@@ -28,7 +28,7 @@ export const WEDDING_EVENTS: EventDetails[] = [
     location: "Aadhoi Datak",
     description:
       "An evening filled with music, dance, and vibrant performances.",
-    image: "https://picsum.photos/800/600?random=11",
+    image: "./dandiya.jpg",
   },
   {
     id: "wedding",
@@ -39,8 +39,7 @@ export const WEDDING_EVENTS: EventDetails[] = [
     location: "Aadhoi Datak",
     description:
       "Marriage means weaving two lives into one. Thinking, feeling, and living beyond yourself can be a stepping stone to Ultimate Union.",
-    image:
-      "https://images.pexels.com/photos/9454915/pexels-photo-9454915.jpeg?auto=compress&cs=tinysrgb&w=800",
+    image: "./wedding.jpg",
   },
   {
     id: "reception",
@@ -51,7 +50,7 @@ export const WEDDING_EVENTS: EventDetails[] = [
     location: "The Green Village Resort",
     description:
       "Celebrate the newlyweds with a night of fine dining and elegance.",
-    image: "https://picsum.photos/800/600?random=13",
+    image: "./reception.jpg",
   },
 ];
 
