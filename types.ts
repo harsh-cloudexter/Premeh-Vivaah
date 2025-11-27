@@ -1,9 +1,9 @@
-
 export interface EventDetails {
   id: string;
   title: string;
   date: string;
   time: string;
+  coordinates: string;
   location: string;
   description: string;
   image: string;
@@ -26,8 +26,8 @@ export interface RsvpData {
 }
 
 export enum BlessingTone {
-  TRADITIONAL = 'Traditional',
-  MODERN = 'Modern',
-  FUNNY = 'Funny',
-  POETIC = 'Poetic'
+  TRADITIONAL = "Traditional",
+  MODERN = "Modern",
+  FUNNY = "Funny",
+  POETIC = "Poetic",
 }

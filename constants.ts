@@ -13,7 +13,8 @@ export const WEDDING_EVENTS: EventDetails[] = [
     title: "Haldi Ceremony",
     date: "February 6, 2026",
     time: "5:00 PM",
-    location: "Premraj Residence",
+    coordinates: "23.380361,70.513944",
+    location: "Aadhoi Datak",
     description:
       "A evening of turmeric, laughter, and blessings to start the festivities.",
     image: "https://picsum.photos/800/600?random=10",
@@ -23,7 +24,8 @@ export const WEDDING_EVENTS: EventDetails[] = [
     title: "Dandiyaras",
     date: "February 7, 2026",
     time: "8:00 PM",
-    location: "Premraj Residence",
+    coordinates: "23.380361,70.513944",
+    location: "Aadhoi Datak",
     description:
       "An evening filled with music, dance, and vibrant performances.",
     image: "https://picsum.photos/800/600?random=11",
@@ -33,9 +35,10 @@ export const WEDDING_EVENTS: EventDetails[] = [
     title: "The Royal Wedding",
     date: "February 8, 2026",
     time: "12:00 PM - 1:00 PM ",
+    coordinates: "23.380361,70.513944",
     location: "Aadhoi Datak",
     description:
-      "Witness the union of two souls amidst sacred mantras and fire.",
+      "Marriage means weaving two lives into one. Thinking, feeling, and living beyond yourself can be a stepping stone to Ultimate Union.",
     image:
       "https://images.pexels.com/photos/9454915/pexels-photo-9454915.jpeg?auto=compress&cs=tinysrgb&w=800",
   },
@@ -44,6 +47,7 @@ export const WEDDING_EVENTS: EventDetails[] = [
     title: "Grand Reception",
     date: "February 15, 2026",
     time: "6:00 PM",
+    coordinates: "19.197709376339873, 72.81101228650755",
     location: "The Green Village",
     description:
       "Celebrate the newlyweds with a night of fine dining and elegance.",

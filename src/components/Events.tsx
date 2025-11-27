@@ -443,9 +443,18 @@ const EventCard: React.FC<{ event: EventDetails; index: number }> = ({
               {/* Location */}
               <div className="flex items-center gap-2">
                 <MapPin className="w-5 h-5 text-wedding-gold" />
-                <span className="font-sans font-extrabold text-lg text-gray-800 uppercase tracking-wide leading-tight">
+                {/* <span className="font-sans font-extrabold text-lg text-gray-800 uppercase tracking-wide leading-tight">
                   {event.location}
-                </span>
+                </span> */}
+                <a
+                  href={`https://www.google.com/maps?q=${event.coordinates}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-sans font-medium text-sm md:text-base opacity-95 leading-tight hover:text-wedding-gold hover:underline transition-all block"
+                  title="Open in Google Maps"
+                >
+                  {event.location}
+                </a>
               </div>
             </div>
           </div>
