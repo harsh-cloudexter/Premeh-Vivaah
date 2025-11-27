@@ -355,12 +355,9 @@ const Events: React.FC = () => {
   );
 };
 
-const EventCard = ({
+const EventCard: React.FC<{ event: EventDetails; index: number }> = ({
   event,
   index,
-}: {
-  event: EventDetails;
-  index: number;
 }) => {
   const isEven = index % 2 === 0;
 
@@ -413,41 +410,53 @@ const EventCard = ({
           isEven ? "md:pr-20 md:text-right" : "md:pl-20 md:text-left"
         } text-center group`}
       >
-        <div className="space-y-5 relative">
-          <h3 className="text-3xl md:text-4xl font-serif text-wedding-red leading-tight group-hover:text-red-700 transition-colors">
+        <div className="space-y-6 relative">
+          <h3 className="text-3xl md:text-5xl font-serif text-wedding-red leading-tight group-hover:text-red-700 transition-colors drop-shadow-sm">
             {event.title}
           </h3>
 
           <div
-            className={`flex flex-col gap-3 text-gray-600 ${
+            className={`flex flex-col gap-5 ${
               isEven ? "md:items-end" : "md:items-start"
             } items-center`}
           >
-            <div className="flex items-center gap-2 bg-white/50 px-3 py-1 rounded-full border border-wedding-gold/20">
-              <Calendar className="w-4 h-4 text-wedding-orange" />
-              <span className="font-sans font-medium text-sm tracking-wide">
+            {/* Date Block */}
+            <div className="flex items-center gap-3 bg-white px-6 py-3 rounded-full border-l-4 border-wedding-red shadow-lg transform hover:scale-105 transition-transform duration-300">
+              <Calendar className="w-6 h-6 text-wedding-red" />
+              <span className="font-serif font-bold text-xl text-gray-900 tracking-wide">
                 {event.date}
               </span>
             </div>
-            <div className="flex items-center gap-2">
-              <Clock className="w-4 h-4 text-wedding-gold" />
-              <span className="font-sans text-sm">{event.time}</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <MapPin className="w-4 h-4 text-wedding-gold" />
-              <span className="font-sans text-sm font-semibold">
-                {event.location}
-              </span>
+
+            <div
+              className={`flex flex-col gap-2 ${
+                isEven ? "md:items-end" : "md:items-start"
+              } items-center`}
+            >
+              {/* Time */}
+              <div className="flex items-center gap-2">
+                <Clock className="w-5 h-5 text-wedding-gold" />
+                <span className="font-sans font-bold text-lg text-wedding-red tracking-wide">
+                  {event.time}
+                </span>
+              </div>
+              {/* Location */}
+              <div className="flex items-center gap-2">
+                <MapPin className="w-5 h-5 text-wedding-gold" />
+                <span className="font-sans font-extrabold text-lg text-gray-800 uppercase tracking-wide leading-tight">
+                  {event.location}
+                </span>
+              </div>
             </div>
           </div>
 
           <div
-            className={`w-12 h-[2px] bg-wedding-gold/50 mx-auto ${
+            className={`w-16 h-[3px] bg-wedding-gold mx-auto ${
               isEven ? "md:ml-auto md:mr-0" : "md:mr-auto md:ml-0"
             }`}
           ></div>
 
-          <p className="text-gray-600 font-serif leading-relaxed text-lg italic">
+          <p className="text-gray-600 font-serif leading-relaxed text-lg italic opacity-90">
             "{event.description}"
           </p>
         </div>

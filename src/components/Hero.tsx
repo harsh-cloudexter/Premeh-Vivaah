@@ -6,7 +6,7 @@ import { COUPLE } from "../../constants";
 const AnimatedText = ({ text, delay }: { text: string; delay: number }) => {
   return (
     <motion.div
-      className="font-script text-6xl md:text-8xl lg:text-9xl text-white drop-shadow-2xl leading-tight justify-center gap-x-[0.25em] z-10"
+      className="font-script text-6xl md:text-8xl lg:text-9xl text-[#C2185B] drop-shadow-2xl leading-tight justify-center gap-x-[0.25em] z-10"
       initial="hidden"
       animate="visible"
       variants={{
@@ -107,9 +107,9 @@ const Hero: React.FC = () => {
             //   repeat: Infinity,
             //   ease: "easeInOut",
             // }}
-            src="./ganesh.png"
+            src="./g1.png"
             alt="Ganesha"
-            className="w-28 h-28 md:w-40 md:h-40 mx-auto mb-2 drop-shadow-[0_0_25px_rgba(212,175,55,0.6)] bg-transparent"
+            className="w-28 h-28 md:w-full  md:h-60 mx-auto mb-2 drop-shadow-[0_0_25px_rgba(212,175,55,0.6)] bg-transparent"
           />
         </motion.div>
 
@@ -119,7 +119,7 @@ const Hero: React.FC = () => {
           animate={{ opacity: 1, letterSpacing: "0.5em" }}
           transition={{ duration: 1, delay: 0.5 }}
         >
-          <p className="font-serif uppercase text-xs md:text-lg text-wedding-gold/90 mb-2 drop-shadow-md">
+          <p className="font-serif uppercase text-xs md:text-lg text-[#8B1E2D] mb-2 drop-shadow-md">
             The Royal Union Of
           </p>
         </motion.div>
@@ -134,7 +134,7 @@ const Hero: React.FC = () => {
             initial={{ opacity: 0, scale: 0.5, filter: "blur(5px)" }}
             animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
             transition={{ delay: 0.5, duration: 0.8, type: "spring" }}
-            className="text-wedding-gold font-serif text-3xl md:text-5xl mx-2"
+            className="text-[#C2185B] font-serif text-3xl md:text-5xl mx-2"
           >
             &
           </motion.span>
@@ -151,9 +151,9 @@ const Hero: React.FC = () => {
           className="flex flex-col items-center gap-4 font-serif text-lg md:text-2xl tracking-wide text-gray-100"
         >
           <div className="flex items-center gap-4">
-            <span className="h-[1px] w-8 md:w-16 bg-wedding-gold block"></span>
-            <p className="drop-shadow-lg">February 8, 2025</p>
-            <span className="h-[1px] w-8 md:w-16 bg-wedding-gold block"></span>
+            <span className="h-[1px] w-8 md:w-16 bg-[#8B1E2D] block"></span>
+            <p className="drop-shadow-lg text-[#D4AF37]">February 8, 2025</p>
+            <span className="h-[1px] w-8 md:w-16 bg-[#8B1E2D] block"></span>
           </div>
           <p className="text-xs md:text-sm uppercase tracking-[0.3em] text-wedding-gold drop-shadow-md">
             Aadhoi Datak • Gujarat
