@@ -58,7 +58,7 @@ const Story: React.FC = () => {
         </motion.div>
 
         {/* Content Section */}
-        <div className="space-y-12 md:space-y-16 text-center md:text-lg leading-relaxed font-sans text-gray-700 relative ">
+        <div className="space-y-10 md:space-y-10 text-center md:text-lg leading-relaxed font-sans text-gray-700 relative ">
           {/* The Vertical Line "Thread" */}
           <div className="absolute top-10 bottom-10 left-1/2 w-[1px] bg-gradient-to-b from-transparent via-wedding-gold/30 to-transparent -translate-x-1/2 hidden md:block"></div>
 

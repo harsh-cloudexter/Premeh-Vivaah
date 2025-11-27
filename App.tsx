@@ -5,6 +5,8 @@ import Events from "./src/components/Events";
 import Footer from "./src/components/Footer";
 import Shlokas from "./src/components/Slokas";
 import Story from "./src/components/Story";
+import TravelInfo from "./src/components/TravelInfo";
+import RSVP from "./src/components/RSVP";
 
 const App: React.FC = () => {
   return (
@@ -12,9 +14,10 @@ const App: React.FC = () => {
       <Hero />
       <Shlokas />
       <Events />
+      <TravelInfo />
       <Story />
       <Countdown />
-      {/* <RSVP /> */}
+      <RSVP />
       <Footer />
     </main>
   );

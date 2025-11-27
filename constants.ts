@@ -48,7 +48,7 @@ export const WEDDING_EVENTS: EventDetails[] = [
     date: "February 15, 2026",
     time: "6:00 PM",
     coordinates: "19.197709376339873, 72.81101228650755",
-    location: "The Green Village",
+    location: "The Green Village Resort",
     description:
       "Celebrate the newlyweds with a night of fine dining and elegance.",
     image: "https://picsum.photos/800/600?random=13",

@@ -11,6 +11,8 @@ const Events: React.FC = () => {
     offset: ["start end", "end start"],
   });
 
+  //calender
+
   const scaleY = useTransform(scrollYProgress, [0, 1], [0, 1]);
 
   // Parallax transforms for background elements
@@ -28,7 +30,7 @@ const Events: React.FC = () => {
   return (
     <section
       ref={containerRef}
-      className="py-32 bg-wedding-cream relative overflow-hidden"
+      className="py-24 bg-wedding-cream relative overflow-hidden"
     >
       {/* Dynamic Background Pattern */}
       <div className="absolute inset-0 opacity-5 bg-[url('https://www.transparenttextures.com/patterns/black-scales.png')]"></div>
@@ -392,6 +394,60 @@ const EventCard: React.FC<{ event: EventDetails; index: number }> = ({
       transition: { type: "spring", stiffness: 200, damping: 20 },
     },
   };
+  // Parsing logic for Date
+  const parseDateTime = (dateStr: string, timeStr: string) => {
+    try {
+      // Example formats:
+      // "5:00 PM"
+      // "12:00 PM - 1:00 PM"
+      // "12:00 PM (Muhuratam)"
+
+      // Remove unwanted text
+      let cleanTime = timeStr.replace(/\(.*?\)/g, "").trim();
+
+      // If time range → use start time only
+      if (cleanTime.includes("-")) {
+        cleanTime = cleanTime.split("-")[0].trim();
+      }
+
+      const dateTimeString = `${dateStr} ${cleanTime}`;
+      const dateObj = new Date(dateTimeString);
+
+      if (isNaN(dateObj.getTime())) return null;
+
+      return dateObj;
+    } catch {
+      return null;
+    }
+  };
+
+  // Generate Google Calendar Link
+  const getGoogleCalendarUrl = (event) => {
+    const startObj = parseDateTime(event.date, event.time);
+    if (!startObj) return "#";
+
+    let endObj: Date;
+
+    // If time range exists → calculate exact end time
+    if (event.time.includes("-")) {
+      const [startStr, endStr] = event.time.replace(/\(.*?\)/, "").split("-");
+      endObj = new Date(`${event.date} ${endStr.trim()}`);
+    } else {
+      // Default = +2 hours
+      endObj = new Date(startObj.getTime() + 2 * 60 * 60 * 1000);
+    }
+
+    const start = startObj.toISOString().replace(/-|:|\.\d\d\d/g, "");
+    const end = endObj.toISOString().replace(/-|:|\.\d\d\d/g, "");
+
+    const title = encodeURIComponent(
+      `${event.title} - Premraj & Mehal Wedding`
+    );
+    const details = encodeURIComponent(event.description);
+    const location = encodeURIComponent(event.location);
+
+    return `https://www.google.com/calendar/render?action=TEMPLATE&text=${title}&dates=${start}/${end}&details=${details}&location=${location}`;
+  };
 
   return (
     <motion.div
@@ -421,9 +477,9 @@ const EventCard: React.FC<{ event: EventDetails; index: number }> = ({
             } items-center`}
           >
             {/* Date Block */}
-            <div className="flex items-center gap-3 bg-white px-6 py-3 rounded-full border-l-4 border-wedding-red shadow-lg transform hover:scale-105 transition-transform duration-300">
-              <Calendar className="w-6 h-6 text-wedding-red" />
-              <span className="font-serif font-bold text-xl text-gray-900 tracking-wide">
+            <div className="flex items-center gap-3 bg-white px-6 py-3 rounded-full border-l-4 border-wedding-red shadow-lg transform hover:scale-105 transition-transform duration-300 ">
+              <Calendar className="w-6 h-6 text-wedding-red " />
+              <span className="font-serif font-bold text-xl text-gray-900 tracking-wide ">
                 {event.date}
               </span>
             </div>
@@ -457,6 +513,18 @@ const EventCard: React.FC<{ event: EventDetails; index: number }> = ({
                 </a>
               </div>
             </div>
+
+            {/* Add To Calendar Button */}
+            <motion.a
+              href={getGoogleCalendarUrl(event)}
+              target="_blank"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="inline-flex items-center gap-2 px-5 py-2.5 bg-white border border-wedding-gold/40 rounded-full text-wedding-red font-semibold text-sm shadow-md hover:bg-wedding-gold hover:text-white transition-all mx-auto md:mx-0 w-fit"
+            >
+              <Calendar className="w-4 h-4" />
+              <span>Add to Calendar</span>
+            </motion.a>
           </div>
 
           <div
