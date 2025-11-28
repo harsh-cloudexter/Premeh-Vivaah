@@ -84,9 +84,9 @@ const RSVP: React.FC = () => {
               <h2 className="text-6xl md:text-8xl font-script text-wedding-red mb-2 drop-shadow-sm">
                 R.S.V.P
               </h2>
-              <p className="text-gray-500 font-serif tracking-[0.2em] text-xs uppercase">
+              {/* <p className="text-gray-500 font-serif tracking-[0.2em] text-xs uppercase">
                 Répondez s'il vous plaît
-              </p>
+              </p> */}
             </motion.div>
 
             <div className="w-full max-w-lg mx-auto">

@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { Flower } from "lucide-react";
+import { Flower, Weight } from "lucide-react";
 
 const DurgaSymbol = () => (
   <svg
@@ -71,11 +71,11 @@ const VERSES = [
     sanskrit: "वाग्देवी सह साक्षी, दैवीकृपया सम्पन्नं समागमम्।",
     meaning: "With Devi as the witness, this union is blessed.",
   },
-  {
-    sanskrit: "द्वौ शरीरौ, एकं चेतः — तदेव मंगलारंभः।",
-    meaning:
-      "Two bodies, one heart — the true beginning of a sacred household.",
-  },
+  // {
+  //   sanskrit: "द्वौ शरीरौ, एकं चेतः — तदेव मंगलारंभः।",
+  //   meaning:
+  //     "Two bodies, one heart — the true beginning of a sacred household.",
+  // },
   {
     sanskrit: "समर्पणं, श्रद्धा, प्रेम — एतेषु आधारितो दांपत्यधर्मः।",
     meaning: "Surrender, sincerity, love — these are the pillars of marriage.",
@@ -192,7 +192,7 @@ const Shlokas: React.FC = () => {
               className="relative"
             >
               <div className="flex flex-col items-center gap-4">
-                <h3 className="text-2xl md:text-4xl lg:text-5xl font-serif font-bold text-wedding-red leading-relaxed drop-shadow-sm">
+                <h3 className="text-2xl amita font-bolt md:text-4xl lg:text-5xl   text-wedding-red leading-relaxed drop-shadow-sm">
                   {verse.sanskrit}
                 </h3>
 

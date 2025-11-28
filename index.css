@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "AmsAaditya";
+  src: url("/AmsAaditya.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AmsManthan";
+  src: url("/AmsManthan.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "amita";
+  src: url("/Amita-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "allura";
+  src: url("/Allura-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.allura {
+  font-family: "allura";
+}
+
+.aaditya {
+  font-family: "AmsManthan";
+}
+
+.amita {
+  font-family: "amita";
+}

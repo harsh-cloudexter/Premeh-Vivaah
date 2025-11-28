@@ -10,7 +10,7 @@ const TravelInfo: React.FC = () => {
       title: "By Train",
       label: "Nearest Railway Station",
       primary: "Samakhiyali (SIOB)",
-      secondary: "Approx. 45 mins drive to venue",
+      secondary: "Approx. 25 mins drive to venue, Pickup & Drop available",
     },
     {
       id: "air",

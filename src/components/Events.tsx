@@ -567,11 +567,11 @@ const EventCard: React.FC<{ event: EventDetails; index: number }> = ({
             />
 
             {/* Overlay Text on Image */}
-            <div className="absolute bottom-0 left-0 right-0 p-6 z-20 text-center transform translate-y-2 group-hover:translate-y-0 transition-transform">
+            {/* <div className="absolute bottom-0 left-0 right-0 p-6 z-20 text-center transform translate-y-2 group-hover:translate-y-0 transition-transform">
               <p className="text-wedding-cream font-script text-2xl opacity-90">
                 Celebration
               </p>
-            </div>
+            </div> */}
           </div>
 
           {/* Decorative background circle behind image */}

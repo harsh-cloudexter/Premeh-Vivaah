@@ -6,7 +6,7 @@ import { COUPLE } from "../../constants";
 const AnimatedText = ({ text, delay }: { text: string; delay: number }) => {
   return (
     <motion.div
-      className="font-script text-6xl md:text-8xl lg:text-9xl text-[#C2185B] drop-shadow-2xl leading-tight justify-center gap-x-[0.25em] z-10"
+      className="allura font-bold text-6xl md:text-8xl lg:text-9xl text-[#C2185B] drop-shadow-2xl leading-tight justify-center gap-x-[0.25em] z-10"
       initial="hidden"
       animate="visible"
       variants={{
@@ -109,8 +109,12 @@ const Hero: React.FC = () => {
             // }}
             src="./g1.png"
             alt="Ganesha"
-            className="w-28 h-28 md:w-full  md:h-60 mx-auto mb-2 drop-shadow-[0_0_25px_rgba(212,175,55,0.6)] bg-transparent"
+            className="w-28 h-28 md:w-40  md:h-40 mx-auto mb-2 drop-shadow-[0_0_25px_rgba(212,175,55,0.6)] bg-transparent"
           />
+          <p className="amita text-sm md:text-lg text-[#8B1E2D] drop-shadow-md">
+            ऊँ वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ । निर्विघ्नं कुरु मे देवा, सर्व
+            कार्येषु सर्वदा ॥
+          </p>
         </motion.div>
 
         {/* Intro Text */}
@@ -134,7 +138,7 @@ const Hero: React.FC = () => {
             initial={{ opacity: 0, scale: 0.5, filter: "blur(5px)" }}
             animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
             transition={{ delay: 0.5, duration: 0.8, type: "spring" }}
-            className="text-[#C2185B] font-serif text-3xl md:text-5xl mx-2"
+            className="text-[#C2185B] allura font-bold text-3xl md:text-5xl mx-2"
           >
             &
           </motion.span>
@@ -148,7 +152,7 @@ const Hero: React.FC = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1 }}
-          className="flex flex-col items-center gap-4 font-serif text-lg md:text-2xl tracking-wide text-gray-100"
+          className="flex flex-col items-center gap-4 mt-6 font-serif text-lg md:text-2xl tracking-wide text-gray-100"
         >
           <div className="flex items-center gap-4">
             <span className="h-[1px] w-8 md:w-16 bg-[#8B1E2D] block"></span>

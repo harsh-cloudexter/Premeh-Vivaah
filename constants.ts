@@ -14,7 +14,7 @@ export const WEDDING_EVENTS: EventDetails[] = [
     date: "February 6, 2026",
     time: "5:00 PM",
     coordinates: "23.380361,70.513944",
-    location: "Aadhoi Datak",
+    location: "Aadhoi Datak (Gujrat)",
     description:
       "A evening of turmeric, laughter, and blessings to start the festivities.",
     image: "./haldi.jpg",
@@ -25,7 +25,7 @@ export const WEDDING_EVENTS: EventDetails[] = [
     date: "February 7, 2026",
     time: "8:00 PM",
     coordinates: "23.380361,70.513944",
-    location: "Aadhoi Datak",
+    location: "Aadhoi Datak (Gujrat)",
     description:
       "An evening filled with music, dance, and vibrant performances.",
     image: "./dandiya.jpg",
@@ -36,7 +36,7 @@ export const WEDDING_EVENTS: EventDetails[] = [
     date: "February 8, 2026",
     time: "12:00 PM - 1:00 PM ",
     coordinates: "23.380361,70.513944",
-    location: "Aadhoi Datak",
+    location: "Aadhoi Datak (Gujrat)",
     description:
       "Marriage means weaving two lives into one. Thinking, feeling, and living beyond yourself can be a stepping stone to Ultimate Union.",
     image: "./wedding.jpg",
@@ -47,7 +47,7 @@ export const WEDDING_EVENTS: EventDetails[] = [
     date: "February 15, 2026",
     time: "6:00 PM",
     coordinates: "19.197709376339873, 72.81101228650755",
-    location: "The Green Village Resort",
+    location: "The Green Village Resort (Mumbai)",
     description:
       "Celebrate the newlyweds with a night of fine dining and elegance.",
     image: "./reception.jpg",
