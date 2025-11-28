@@ -18,16 +18,24 @@ const App: React.FC = () => {
         <div className="absolute inset-0 bg-[url('/black-scales.png')] bg-cover bg-center opacity-5"></div>
 
         {/* Content above */}
-        <img
-          src="/logo1.png"
-          className="w-30 h-40 md:w-40 md:h-56 relative z-10"
-        />
+        <img src="/logo1.png" className=" h-80  md:h-105 relative z-10" />
       </div>
 
       <Events />
 
       <TravelInfo />
       <Story />
+      <div className="relative flex flex-col justify-center items-center mb-4 ">
+        {/* Background image with 5% opacity */}
+        <div className="absolute inset-0 bg-[url('/black-scales.png')] bg-cover bg-center opacity-5"></div>
+        <h2 className="text-3xl md:text-5xl font-script text-wedding-red mb-12 drop-shadow-md">
+          With love from
+        </h2>
+        <img
+          src="/afcare_logo.png"
+          className=" h-20  md:h-40 relative z-10 "
+        ></img>
+      </div>
       <Countdown />
       <RSVP />
       <Footer />

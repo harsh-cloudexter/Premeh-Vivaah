@@ -20,10 +20,6 @@ const Footer: React.FC = () => {
           <span>for the love of celebrations</span>
         </div>
       </div>
-      <img
-        src="/afcare_logo.png"
-        className="absolute md:w-30 md:h-28 h-8 bottom-1 md:bottom-12 md:right-3 right-1 "
-      ></img>
     </footer>
   );
 };
