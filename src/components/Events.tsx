@@ -34,7 +34,10 @@ const Events: React.FC = () => {
     >
       {/* Dynamic Background Pattern */}
       <div className="absolute inset-0 opacity-5 bg-[url('https://www.transparenttextures.com/patterns/black-scales.png')]"></div>
-
+      {/* <img
+        src="/logo1.png"
+        className="absolute inset-0 top-0 left-1/2 -translate-x-1/2 w-30 h-28 md:w-32 md:h-36"
+      ></img> */}
       {/* --- Parallax Background Elements --- */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         {/* Large Rotating Mandalas - Top Left */}

@@ -459,8 +459,10 @@ const Story: React.FC = () => {
       className="py-24 md:py-32 bg-wedding-cream relative overflow-hidden text-gray-800"
     >
       {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-5 bg-[url('https://www.transparenttextures.com/patterns/black-scales.png')]"></div>
-
+      <div className="absolute inset-0 opacity-5 bg-[url('/black-scales.png')]"></div>
+      {/* <div className="absolute top-0 left-10 p-20 opacity-100 ">
+        <img className="w-55 h-60" src="/logo1.png"></img>
+      </div> */}
       {/* Floating Elements */}
       <div className="absolute top-0 right-0 p-20 opacity-5 pointer-events-none">
         <Star className="w-64 h-64 text-wedding-gold" />
@@ -561,7 +563,8 @@ const Story: React.FC = () => {
         </div>
 
         {/* Footer Ornament */}
-        <div className="mt-20 flex justify-center opacity-60">
+        <div className="mt-20 flex justify-center opacity-100">
+          {/* <img className="w-55 h-60" src="/logo1.png"></img> */}
           <Heart className="w-12 h-12 text-wedding-red" />
         </div>
       </div>

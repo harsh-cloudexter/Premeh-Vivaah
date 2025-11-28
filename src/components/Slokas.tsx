@@ -98,7 +98,7 @@ const Shlokas: React.FC = () => {
   return (
     <section
       ref={containerRef}
-      className="py-24 md:py-32 bg-wedding-cream relative overflow-hidden flex flex-col items-center justify-center"
+      className="py-24 md:py-20 bg-wedding-cream relative overflow-hidden flex flex-col items-center justify-center"
     >
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5 bg-[url('./black-scales.png')]"></div>
@@ -210,6 +210,10 @@ const Shlokas: React.FC = () => {
           ))}
         </div>
       </div>
+      {/* <img
+        src="/logo1.png"
+        className="absolute bottom-0 w-30 h-40 md:w-32 md:h-36"
+      ></img> */}
     </section>
   );
 };

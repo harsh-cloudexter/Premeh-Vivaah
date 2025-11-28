@@ -88,7 +88,7 @@ const Hero: React.FC = () => {
       {/* Main Content */}
       <motion.div
         style={{ y: textY, opacity }}
-        className="z-10 text-white px-4 space-y-8 relative max-w-7xl mx-auto w-full flex flex-col items-center"
+        className="z-10 text-white px-4 space-y-4 relative max-w-7xl mx-auto w-full flex flex-col items-center"
       >
         {/* Animated Ganesha */}
         <motion.div
@@ -109,7 +109,7 @@ const Hero: React.FC = () => {
             // }}
             src="./g1.png"
             alt="Ganesha"
-            className="w-28 h-28 md:w-40  md:h-40 mx-auto mb-2 drop-shadow-[0_0_25px_rgba(212,175,55,0.6)] bg-transparent"
+            className="w-28 h-28 md:w-40  md:h-40 mx-auto  drop-shadow-[0_0_25px_rgba(212,175,55,0.6)] bg-transparent"
           />
           <p className="amita text-sm md:text-lg text-[#8B1E2D] drop-shadow-md">
             ऊँ वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ । निर्विघ्नं कुरु मे देवा, सर्व
@@ -129,7 +129,7 @@ const Hero: React.FC = () => {
         </motion.div>
 
         {/* Names Container */}
-        <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-6 mb-6 z-20 w-full px-4">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-0 md:gap-6 mb-6 z-20 w-full px-4">
           {/* Groom Name */}
           <AnimatedText text={COUPLE.groom} delay={0.4} />
 
@@ -152,7 +152,7 @@ const Hero: React.FC = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 1 }}
-          className="flex flex-col items-center gap-4 mt-6 font-serif text-lg md:text-2xl tracking-wide text-gray-100"
+          className="flex flex-col items-center gap-4 mt-0  font-serif text-lg md:text-2xl tracking-wide text-gray-100"
         >
           <div className="flex items-center gap-4">
             <span className="h-[1px] w-8 md:w-16 bg-[#8B1E2D] block"></span>

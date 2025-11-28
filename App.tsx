@@ -10,10 +10,22 @@ import RSVP from "./src/components/RSVP";
 
 const App: React.FC = () => {
   return (
-    <main className="w-full min-h-screen">
+    <main className="w-full">
       <Hero />
       <Shlokas />
+      <div className="relative flex justify-center items-center ">
+        {/* Background image with 5% opacity */}
+        <div className="absolute inset-0 bg-[url('/black-scales.png')] bg-cover bg-center opacity-5"></div>
+
+        {/* Content above */}
+        <img
+          src="/logo1.png"
+          className="w-30 h-40 md:w-40 md:h-56 relative z-10"
+        />
+      </div>
+
       <Events />
+
       <TravelInfo />
       <Story />
       <Countdown />
